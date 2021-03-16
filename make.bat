@@ -10,6 +10,7 @@ if "%SPHINXBUILD%" == "" (
 set SOURCEDIR=source
 set BUILDDIR=build
 
+if "%1" == "publish" goto publish
 if "%1" == "" goto help
 
 %SPHINXBUILD% >NUL 2>NUL
@@ -26,6 +27,11 @@ if errorlevel 9009 (
 )
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+goto end
+
+:publish
+robocopy .\build\html .\docs /MIR /XF .buildinfo objects.inv
+type nul >> .\docs\.nojekyll
 goto end
 
 :help
