@@ -30,7 +30,10 @@ release = '1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.mathjax', 'sphinx_rtd_theme',
+    'sphinx.ext.mathjax',
+    'sphinx_rtd_theme',
+    'sphinxcontrib.getstart_sphinx.better_docref',
+    'sphinxcontrib.getstart_sphinx.column'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
