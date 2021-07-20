@@ -141,7 +141,7 @@ From `official document <https://planset-study-sphinx.readthedocs.io/ja/latest/i
 
 .. code-block:: none
 
-    .. code-block: python
+    .. code-block:: python
 
         import sys
         print sys.path
