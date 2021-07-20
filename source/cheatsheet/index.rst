@@ -161,7 +161,7 @@ From `official document <https://planset-study-sphinx.readthedocs.io/ja/latest/i
 .. code-block:: none
 
    - http://sphinx-doc.org
-   - `sphinx-doc <http://sphinx-doc.org>
+   - `sphinx-doc <http://sphinx-doc.org>`_
 
 - http://sphinx-doc.org
 - `sphinx-doc <http://sphinx-doc.org>`_
